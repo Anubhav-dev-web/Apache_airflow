@@ -27,6 +27,7 @@ def operators_dag():
     first = first_task()  ## Call the first task
     second = second_task()  ## Call the second task
     third = bash_task_modern()  ## Call the third bash task
+    fourth = bash_task_oldschool  ## Reference the old school bash task
 
     first >> second >> third  ## Set the task dependencies
 
